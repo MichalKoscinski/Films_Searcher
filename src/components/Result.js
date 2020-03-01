@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Results from "./Results";
 
 function Result({ result, openPopup }) {
 	const [state, setState] = useState({});
 	useEffect(() => {
-	  axios(`http://www.omdbapi.com/?apikey=dfe6d885&i=${result.imdbID}`).then(
+	  axios(`https://www.omdbapi.com/?apikey=dfe6d885&i=${result.imdbID}`).then(
 		({ data }) => {
 		  setState(data);
 		}
 	  );
 	});
+
   
 	return (
+		
 	  <div className="result" onClick={() => openPopup(state)}>
 		<div class="upcircle" id="upcircle">
 		<div class="up" id="up">

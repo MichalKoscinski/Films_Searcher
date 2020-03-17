@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Results from "./Results";
 
-function Result({ result, openPopup }) {
+
+var Result = ({result, openPopup}) => {
 	const [state, setState] = useState({});
 	useEffect(() => {
 	  axios(`https://www.omdbapi.com/?apikey=dfe6d885&i=${result.imdbID}`).then(

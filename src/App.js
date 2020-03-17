@@ -5,11 +5,9 @@ import Results from './components/Results'
 import Popup from './components/Popup'
 import { TitleComponent } from './TitleComponent';
 
-import { Button } from 'react-bootstrap';
-
-function App() {
+var App = () => {
   const [state, setState] = useState({
-    s: "",
+    content: "",
     results: [],
     selected: {}
     
@@ -17,16 +15,16 @@ function App() {
   const apiurl = "https://www.omdbapi.com/?apikey=dfe6d885";
 
   const handleInput = (e) => {
-    let s = e.target.value;
+    let content = e.target.value;
 
     setState(prevState => {
-      return { ...prevState, s: s }
+      return { ...prevState, content: content }
     });
   }
 
   const search = (e) => {
     if (e.key === "Enter") {
-      axios(apiurl + "&s=" + state.s).then(({ data }) => {
+      axios(apiurl + "&s=" + state.content).then(({ data }) => {
         let results = data.Search;
         setState(prevState => {
           return { ...prevState, results: results }
@@ -36,7 +34,7 @@ function App() {
   }
 
   const handleClick = () => {
-    axios(apiurl + "&s=" + state.s).then(({ data }) => {
+    axios(apiurl + "&s=" + state.content).then(({ data }) => {
       let results = data.Search;
       setState(prevState => {
         return { ...prevState, results: results }

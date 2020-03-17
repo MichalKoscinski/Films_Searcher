@@ -1,5 +1,6 @@
 import React from 'react'
-function Popup({ selected, closePopup }) {
+
+var Popup = ({selected, closePopup}) => {
 	return (
 		<section className="popup">
 			<div className="content">

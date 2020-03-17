@@ -2,7 +2,7 @@ import React from 'react'
 
 import Result from './Result'
 
-function Results ({ results, openPopup }) {
+var Results = ({ results, openPopup }) => {
 	return (
 		<section className="results">
 			{results.map(result => (

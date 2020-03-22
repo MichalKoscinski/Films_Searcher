@@ -9,12 +9,13 @@ var Popup = ({selected, closePopup}) => {
 				<p className="rating">Genre: {selected.Genre} </p>
 				<p className="rating">Released: {selected.Released} </p>
 				<p className="rating">Country: {selected.Country} </p>
-				<p className="rating">Click on the picture to see more</p>
+				
+				{(selected.Poster !== "N/A")? <p className="rating">Click on the picture to see more</p>: <p></p>}
 				<div className="plot">
 				<a href={"https://www.google.com/search?q=" + selected.Title}>
 				<img src={selected.Poster} alt="" />
 				</a>
-					<p>{selected.Plot}</p>
+				{(selected.Plot !== "N/A")? <p>{selected.Plot}</p>: <p></p>}
 				</div>
 				<button className="close" onClick={closePopup}>Close</button>
 			</div>
@@ -23,3 +24,6 @@ var Popup = ({selected, closePopup}) => {
 }
 
 export default Popup
+
+
+// <img src={result.Poster !== "N/A" ? result.Poster : defaultImg} alt="" />

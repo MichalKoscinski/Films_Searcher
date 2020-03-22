@@ -25,5 +25,3 @@ var Popup = ({selected, closePopup}) => {
 
 export default Popup
 
-
-// <img src={result.Poster !== "N/A" ? result.Poster : defaultImg} alt="" />

@@ -29,20 +29,3 @@ var Result = ({result, openPopup}) => {
 	);
   }
 export default Result
-
-/*
-{(state.results && state.results.length>0)?<Results results={state.results} openPopup={openPopup} />:
-		<div className="nothing"> Nothing to show. Please, use the search function </div>
-		<img src={result.Poster} alt=""/>
-		{result.Poster ? <img src={result.Poster} alt=""/> : <img src="fractal-dark.png" alt=""/>}
-{(typeof result.Poster != "undefined") ? <img src={result.Poster} alt=""/> : <img src="fractal-dark.png" alt=""/>}
-  console.log(result.Poster)
-  <img src={result.Poster ? result.Poster} alt="" />
-
-  <img src={result.Poster == N/A} alt="" /> <img src={result.Poster} alt="" /> : <img src="fractal-dark.png" alt=""/>}
-
-
-
-
-  <img src={result.Poster} alt="" /> !== "N/A" ? <img src={result.Poster} alt="" /> : <img src={`fractal-dark.jpg`} alt="" />
-		*/

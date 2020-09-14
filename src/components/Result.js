@@ -10,8 +10,8 @@ var Result = ({result, openPopup}) => {
 		({ data }) => {
 		  setState(data);
 		}
-	  );
-	});
+		);
+	  }, []);
 
   
 	return (

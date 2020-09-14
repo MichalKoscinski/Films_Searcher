@@ -11,7 +11,7 @@ var Result = ({result, openPopup}) => {
 		  setState(data);
 		}
 		);
-	  }, []);
+	  }, [result.imdbID]);
 
   
 	return (

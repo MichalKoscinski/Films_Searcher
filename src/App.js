@@ -62,7 +62,7 @@ var App = () => {
   return (
     <div className="App">
       <header>
-        <h1>Films Searcher</h1>
+        <h1>Film Search Site</h1>
       </header>
       <main>
 
@@ -86,7 +86,7 @@ var App = () => {
         }
         {(typeof state.selected.Title != "undefined") ? <Popup selected={state.selected} closePopup={closePopup} /> : false}
       </main>
-      <TitleComponent title="Films Searcher" />
+      <TitleComponent title="Film Search Site" />
     </div>
   );
 }

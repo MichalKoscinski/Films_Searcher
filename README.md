@@ -1,30 +1,21 @@
 # Film Search Site
 A website allowing to search for a film, see its rating and other information
 
-
-
-The website was deployed using Heroku
+This website was deployed using Netlify.
 
 ### Preview
-https://social-media-michal.herokuapp.com/
+https://michalkoscinski-film-search-site.netlify.app/
 
 ### Technologies
-- **Django REST**
-- **Django**
 - **React**
-- **Bootstrap**
-- **PostgreSQL**
 
 
 ### Setup
 ```
-$ cd Social-Media
-$ py manage.py runserver
-```
+$ cd Portfolio-Website
+$ npm install
+$ npm start
 
-### Testing the backend
-```
-$ py manage.py test
 ```
 
 ### Commands
@@ -34,14 +25,5 @@ $ py manage.py test
 ### Screenshot:
 
 
-![alt text](https://i.ibb.co/F3zBJ4G/Social-media.png)
-
-
-
-
-
-
-
-Link: https://michalkoscinski-film-search-site.netlify.app/
-
 ![alt text](https://i.ibb.co/K97KWSV/films-searcher.png)
+

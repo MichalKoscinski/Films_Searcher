@@ -12,7 +12,7 @@ https://michalkoscinski-film-search-site.netlify.app/
 
 ### Setup
 ```
-$ cd Portfolio-Website
+$ cd Film-Search-Site
 $ npm install
 $ npm start
 

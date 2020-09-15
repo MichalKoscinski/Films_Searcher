@@ -15,7 +15,6 @@ https://michalkoscinski-film-search-site.netlify.app/
 $ cd Film-Search-Site
 $ npm install
 $ npm start
-
 ```
 
 ### Commands

@@ -68,14 +68,14 @@ const App = () => {
 
     
 
-      <div class="introduction_button">
+      <div className="introduction_button">
         <div className="introduction">
           See more of my projects here:&ensp;  
-          <a href="https://github.com/MichalKoscinski?tab=repositories" class="GitHub">
+          <a href="https://github.com/MichalKoscinski?tab=repositories" className="GitHub">
             My GitHub
             </a>
             </div>
-            <div class="button" onClick={handleClick}>
+            <div className="button" onClick={handleClick}>
             Search
             </div>
         </div>

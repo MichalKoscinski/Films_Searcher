@@ -1,5 +1,6 @@
 # Film Search Site
-A website allowing to search for a film, see its rating and other information
+
+A platform allowing to search for a film, see its rating and other information.
 
 This website was deployed using Netlify.
 

@@ -5,7 +5,7 @@ import Results from './components/Results'
 import Popup from './components/Popup'
 import { TitleComponent } from './TitleComponent';
 
-var App = () => {
+const App = () => {
   const [state, setState] = useState({
     content: "",
     results: [],

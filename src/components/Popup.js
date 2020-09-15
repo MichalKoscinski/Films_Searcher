@@ -1,6 +1,6 @@
 import React from 'react'
 
-var Popup = ({selected, closePopup}) => {
+let Popup = ({selected, closePopup}) => {
 	return (
 		<section className="popup">
 			<div className="content">

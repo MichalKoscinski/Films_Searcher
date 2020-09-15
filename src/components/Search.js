@@ -1,6 +1,6 @@
 import React from 'react'
 
-var Search = ({handleInput, search}) => {
+let Search = ({handleInput, search}) => {
 	return (
 		<section className="searchbox-wrap">
 			<input 

@@ -3,7 +3,7 @@ import axios from "axios";
 import defaultImg from './no_photo.jpg';
 
 
-var Result = ({result, openPopup}) => {
+let Result = ({result, openPopup}) => {
 	const [state, setState] = useState({});
 	useEffect(() => {
 	  axios(`https://www.omdbapi.com/?apikey=dfe6d885&i=${result.imdbID}`).then(

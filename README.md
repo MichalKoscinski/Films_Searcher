@@ -1,6 +1,6 @@
 # Film Search Site
 
-A platform allowing to search for a film, see its rating and other information.
+A platform allowing to search for a film using IMDb API and see its rating.
 
 This website was deployed using Netlify.
 
